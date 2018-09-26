@@ -4,6 +4,5 @@ Ser capaz de analizar suas vantagens e desvantagens quanto aos diversos algoritm
 
 #Algoritmos
 Os algoritmos foram desenvolvidos e adaptados a partir do material em sala de aula (apresentado em C), e dos sites a seguir:
-Insertion Sort:
 
-https://www.geeksforgeeks.org/insertion-sort/
+Insertion Sort: https://www.geeksforgeeks.org/insertion-sort/
