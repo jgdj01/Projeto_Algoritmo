@@ -24,15 +24,18 @@ def insertionSort(arr):
 
 ##Função Main
 def main():
-    arr = 'entrada1e+06.txt'
-    arr = open(arr, 'r')
-    li = arr.readlines()
+    #Arquivo para teste
+    arquivo = open('entrada-decrescente-10000.txt', 'r')
+    dados = arquivo.read()
+    elementos = [int (i) for i in dados.split()]
+    print('\tTamanho: ',len(elementos))
+    print('\nSEM ORDENAR -> ', elementos)
     #Essa parte irá contar quanto tempo foi gasto na execução do algoritmo
     tempinicial = timeit.default_timer()
-    arr = insertionSort(li)
+    insertionSort(elementos)
     tempfinal = timeit.default_timer()
-    print('duracao: %f' % (tempfinal - tempinicial))
-    print(arr)
+    print('\nDEPOIS DE ORDENAR -> ', elementos)
+    print('\n\t\tDuracao: %f' % (tempfinal - tempinicial))
 
 
 if __name__ == "__main__":
